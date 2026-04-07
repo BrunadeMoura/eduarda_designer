@@ -1,0 +1,1 @@
+> Branch name defined as "main" to comply with the incoming changes in Git 3.0
