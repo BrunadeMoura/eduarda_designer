@@ -58,16 +58,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* h2 {
-  text-align: center;
-  font-size: var(--title-font-size);
-  font-weight: 400;
-} */
-
-/* .title{
+.title{
   font-family: var(--title-font);
   color: var(--title-color);
-} */
+  text-align: center;
+}
+
+p {
+  color: var(--title-color);
+}
 
 .toggle{
   cursor: pointer;
@@ -99,10 +98,6 @@ body {
   display: grid;
   gap: 2rem;
 } */
-
-.section {
-  padding: calc(1rem + var(--header-height)) 0;
-}
 
 /* .section .title {
   margin-bottom: 1rem;
@@ -205,12 +200,6 @@ nav.show div.icon-close {
   top: 1rem;
 }
 
-/*----------------logo----------------*/
-/* .logo {
-  font: 700 1.875rem var(--title-font);
-  color: var(--title-color);
-  } */
-  
 /*----------------navigation----------------*/
 nav .menu ul {
   display: none;
@@ -256,68 +245,68 @@ nav .menu {
 }
 
 /*----------------home----------------*/
-/* 
 #home {
   overflow: hidden;
 }
 
 #home .container {
-  margin: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
-#home .imgage img {
-  border-radius: 5rem;
+#home.section {
+  padding: calc(1rem + var(--header-height)) 0;
+}
+
+h1.title{
+  font-size: var(--title-font-size);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+#home .image img{
+  border-radius: 70% 30%;
+  position: relative;
 }
 
 #home .image {
   position: relative;
+  width: 80%;
+  margin-bottom: 2rem;
 }
 
-/*sombra imagem 1
-#home .image::before {
+/*sombra imagem 1*/
+#home .image::before,
+#home .img-shadow::before {
   content: '';
   height: 100%;
   width: 100%;
   background: var(--second-color);
   position: absolute;
-  left: 16.7%;
   z-index: 0;
-} */
-
-/* #home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #ffffff;
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
-} */
-
-/* #home .image img {
-  position: relative;
-  right: 2.93rem;
+  border-radius: 70% 30%;
+  opacity: 60%;
 }
 
-#home .image img,
-#home .image::before {
-  border-radius: 0.25rem;
+#home .image::before{
+  left: 3%;
+  opacity: 60%;
 }
 
-#home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  text-align: center;
+#home .img-shadow::before {
+  left: 6%;
+  opacity: 30%;
 }
 
-#home .text h1 {
-  margin-bottom: 1rem;
+#home .identification {
+  border: 1px solid white;
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  
 }
-
-#home .text p {
-  margin-bottom: 2rem;
-} */
 
 /*----------------about----------------*/
 /* #about {
