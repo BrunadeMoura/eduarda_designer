@@ -31,7 +31,7 @@ function changeHeaderWhenScroll () {
   }
 }
 
-//testimonials carousel slider swiper
+//frequent-asked carousel slider swiper
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
 
@@ -59,7 +59,7 @@ const scrollReveal = ScrollReveal ({
 })
 
 scrollReveal.reveal(
-    `#home .text, #home .image, #about .image, #about .text, #services .card, #testimonials .testimonials, #contact .links, footer .brand, footer .social
+    `#home .text, #home .image, #about .image, #about .text, #services .card, #frequent-asked .frequent-asked, #contact .links, footer .brand, footer .social
     `, { interval: 100 })
 
 //back to top
