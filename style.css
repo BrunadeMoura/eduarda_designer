@@ -25,7 +25,7 @@ img {
   /*colors*/
   --body-color: #000000;
   --title-color: #ffffff;
-  --second-color: #ebb3b4; /* cor da sombra colorida da imagem e do header*/
+  --second-color: #ebb3b4;
 
   /*menu*/
   --menu-base-color: #ffffff;
@@ -40,6 +40,7 @@ img {
 
   /*fonts*/
   --title-font-size: 2.46rem;
+  --sections-title-font-size: 2.1rem;
   --subtitle-font-size: 1rem;
 
   --title-font: "Noto Serif Display", serif;
@@ -52,8 +53,6 @@ html {
 }
 
 body {
-  /* font: 400 1rem var(--body-font); */
-  /* color: var(--text-color); */
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
@@ -62,6 +61,12 @@ body {
   font-family: var(--title-font);
   color: var(--title-color);
   text-align: center;
+}
+
+h2.title{
+  font-size: var(--sections-title-font-size);
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -92,6 +97,10 @@ p {
 .container {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.section {
+  padding-top: calc(1rem + var(--header-height));
 }
 
 /* .grid {
@@ -257,14 +266,10 @@ nav .menu {
   padding-bottom: 2rem;
 }
 
-#home.section {
-  padding: calc(1rem + var(--header-height)) 0;
-}
-
 h1.title{
   font-size: var(--title-font-size);
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 #home .image img{
@@ -275,7 +280,7 @@ h1.title{
 #home .image {
   position: relative;
   width: 80%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /*sombra imagem 1*/
@@ -309,31 +314,21 @@ h1.title{
 }
 
 /*----------------about----------------*/
-/* #about {
-  background-color: white;
-}
-
-#about .container {
-  margin: 0;
-}
-
 #about .image {
-  position: relative;
+  margin: 0 1rem 0 0rem;
+  float: left;
+  width: 40%;
 }
 
 #about .image img {
-  position: relative;
+  border-radius: 50%;
 }
 
-#about .image img,
-#about .image::before {
-  border-radius: 0.25rem;
+#about .text p{
+  font-size: 0,8rem;
+  text-align: justify;
+  hyphens: auto;
 }
-
-#about .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-} */
 
 /*----------------services----------------*/
 /* .card.grid {
