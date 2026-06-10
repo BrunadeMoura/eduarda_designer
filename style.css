@@ -41,7 +41,7 @@ img {
   /*fonts*/
   --title-font-size: 2.46rem;
   --sections-title-font-size: 2.1rem;
-  --subtitle-font-size: 1rem;
+  --subtitle-font-size: .97rem;
 
   --title-font: "Noto Serif Display", serif;
   --body-font: "Roboto", sans-serif;
@@ -71,6 +71,12 @@ h2.title{
 
 p {
   color: var(--title-color);
+}
+
+subtitle {
+  font-family: var(--body-font);
+  color: var(--title-color);
+  font-size: var(--subtitle-font-size);
 }
 
 .toggle{
@@ -103,25 +109,8 @@ p {
   padding-top: calc(1rem + var(--header-height));
 }
 
-/* .grid {
-  display: grid;
-  gap: 2rem;
-} */
-
-/* .section .title {
-  margin-bottom: 1rem;
-} */
-
-/* .section .subtitle {
-  font-size: var(--subtitle-font-size);
-} */
-
 /* .section header {
   margin-bottom: 4rem;
-} */
-
-/* .section header strong {
-  color: var(--base-color);
 } */
 
 
@@ -331,29 +320,32 @@ h1.title{
 }
 
 /*----------------services----------------*/
-/* .card.grid {
+
+.cards.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
-.card {
-  padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: .25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
+.card img {
+  border-radius: 50% 50% 0 0;
+  margin-bottom: .3rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color);
+.card-subtitle {
+  display: inline-flex;
 }
 
-.card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-} */
+.card-subtitle img {
+  max-height: calc(var(--subtitle-font-size) + .3rem);
+  width: auto;
+}
+
+.card-subtitle subtitle {
+  margin: .2rem;
+}
 
 /*----------------testimonials----------------*/
 /* #testimonials {
