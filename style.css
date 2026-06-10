@@ -20,7 +20,7 @@ img {
 
 /*----------------variables----------------*/
 :root {
-  --header-height: 4.5rem;
+  --header-height: 3.5rem;
 
   /*colors*/
   --body-color: #000000;
@@ -41,7 +41,7 @@ img {
   /*fonts*/
   --title-font-size: 2.46rem;
   --sections-title-font-size: 2.1rem;
-  --subtitle-font-size: .97rem;
+  --subtitle-font-size: 1rem;
 
   --title-font: "Noto Serif Display", serif;
   --body-font: "Roboto", sans-serif;
@@ -258,7 +258,7 @@ nav .menu {
 h1.title{
   font-size: var(--title-font-size);
   font-weight: 400;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #home .image img{
@@ -268,8 +268,8 @@ h1.title{
 
 #home .image {
   position: relative;
-  width: 80%;
-  margin-bottom: 2.5rem;
+  width: 68%;
+  margin-bottom: 2rem;
 }
 
 /*sombra imagem 1*/
@@ -324,7 +324,9 @@ h1.title{
 .cards.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  padding: 0 1rem;
 }
 
 .card img {
