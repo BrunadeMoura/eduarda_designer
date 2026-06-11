@@ -417,6 +417,7 @@ h1.title{
 #contact ul li i {
   color: var(--base-color);
 } */
+#map { height: 180px; }
 
 /*----------------footer----------------*/
 /* footer {
