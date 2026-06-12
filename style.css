@@ -26,6 +26,7 @@ img {
   --body-color: #000000;
   --title-color: #ffffff;
   --second-color: #ebb3b4;
+  --text-gray: #868686;
 
   /*menu*/
   --menu-base-color: #ffffff;
@@ -73,31 +74,14 @@ p {
   color: var(--title-color);
 }
 
-subtitle {
-  font-family: var(--body-font);
-  color: var(--title-color);
-  font-size: var(--subtitle-font-size);
-}
-
 .toggle{
   cursor: pointer;
 }
 
-/* .button {
-  background-color: var(--base-color);
-  color: var(--text-color-light);
-  height: 3.5rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.25rem;
-  font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+.body-font{
+  font-family: var(--body-font);
+  color: var(--title-color);
 }
-
-.button:hover {
-  background: var(--base-color-alt);
-} */
 
 /*----------------layout----------------*/
 .container {
@@ -108,11 +92,6 @@ subtitle {
 .section {
   padding-top: calc(1rem + var(--header-height));
 }
-
-/* .section header {
-  margin-bottom: 4rem;
-} */
-
 
 /*----------------header/aside----------------*/
 #header {
@@ -299,7 +278,6 @@ h1.title{
   border: 1px solid white;
   border-radius: 3rem;
   padding: 1rem 1.5rem;
-  
 }
 
 /*----------------about----------------*/
@@ -320,7 +298,6 @@ h1.title{
 }
 
 /*----------------services----------------*/
-
 .cards.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -349,21 +326,11 @@ h1.title{
   margin: .2rem;
 }
 
-/*----------------frequent-asked----------------*/
-
-/* <div id="question">
-                <img src="assets/icons/Corner down-right.svg" alt="">
-                <h6>Pergunta 1</h6>
-                <p>Resposta</p>
-              </div> */
-
-/* #frequent-asked .question {
-  display: inline-flex;
+subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
-
-*/
-
+/*----------------frequent-asked----------------*/
 #question {
   display: inline-flex;
 }
@@ -374,9 +341,12 @@ h1.title{
 }
 
 #frequent-asked h6 {
-  color: var(--title-color);
-  font-size: var(--body-font);
   margin: .2rem;
+  font-size: 1rem;
+}
+
+#frequent-asked h6.body-font {
+  font-weight: 400;
 }
 
 #answer {
@@ -385,39 +355,68 @@ h1.title{
 }
 
 #answer p {
-  color: #868686;
+  color: var(--text-gray);
 }
-
-
 
 /*----------------contact----------------*/
-/* #contact .grid {
-  gap: 4rem;
+#contact h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
 }
 
-#contact .text p {
+#contact p {
+  color: var(--text-gray);
+}
+
+#contact .address {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-#contact .button i,
-#contact ul li i {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
+#contact .phone {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 2rem;
 }
 
-#contact ul.grid {
-  gap: 2rem;
-}
-
-#contact ul li {
+#contact .button-whatsapp {
   display: flex;
+  background-color: #3cc027;
   align-items: center;
+  border-radius: 2rem;
+  padding: 0rem .6rem;
+  align-self: center;
+  border: 3px solid green;
 }
 
-#contact ul li i {
-  color: var(--base-color);
-} */
-#map { height: 180px; }
+#contact .button-whatsapp:hover {
+  background-color: #31a51f;
+  transition: .2s;
+}
+
+#contact .img-logo-whatsapp {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+#contact .img-logo-whatsapp img {
+  filter: invert(1) brightness(2) saturate(0); /*svg originalmente na cor preta*/
+  width: calc(var(--subtitle-font-size)*3);
+}
+
+#contact .text a {
+  color: var(--title-color);
+}
+
+#map {
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 0;
+}
 
 /*----------------footer----------------*/
 /* footer {
