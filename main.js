@@ -31,24 +31,6 @@ function changeHeaderWhenScroll () {
   }
 }
 
-//frequent-asked carousel slider swiper
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-
-  //pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true
-    }
-  }
-});
-
 // scrollreveal: mostrar elementos quando der scroll na página
 
 const scrollReveal = ScrollReveal ({
