@@ -171,7 +171,7 @@ nav .icon-close {
   transition: 0.2s;
 }
 
-nav.show div.icon-close {
+nav.show .icon-close {
   visibility: visible;
   opacity: 1;
   top: 1rem;
