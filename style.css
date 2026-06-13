@@ -226,6 +226,22 @@ nav .menu {
   overflow: hidden;
 }
 
+#home .home-text{
+  display: contents;
+}
+
+#home .title {
+  order: 1;
+}
+
+#home .image {
+  order: 2;
+}
+
+#home .identification {
+  order: 3;
+}
+
 #home .container {
   display: flex;
   position: relative;
@@ -547,6 +563,10 @@ footer .social a:hover {
     padding: 0 7rem;
   }
 
+  .section {
+    padding-top: var(--header-height);
+  }
+
   /*----------------menu----------------*/
   .menu-title {
     color: var(--title-color);
@@ -567,13 +587,51 @@ footer .social a:hover {
   nav .icon-menu {
     display: none;
   }
+
+  /*----------------home----------------*/
+  #home .home-text{
+    display: flex;
+    flex-flow: column;
+    max-width: 50vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding-top: 6rem;
+  }
+
+  #home .container {
+    height: 100vh;
+    width: 100vw;
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  h1.title{
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 6.5rem;
+  }
+
+  #home .image {
+    width: 28vw;
+    margin-right: 6%;
+    margin-bottom: 0;
+  }
+
+  #home .identification {
+    border-radius: 3rem;
+    padding: 1.5rem 2.5rem;
+    width: max-content;
+  }
+
+  #home .identification p {
+    font-size: 2.28rem;
+  }
+
 }
 
-
-
-  /* .section {
-    padding: 10rem 0;
-  } */
 
   /* .section header,
   #frequent-asked header {
@@ -582,10 +640,6 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .button {
-    height: 3.125rem;
-  } */
 
   /*nav*/
 
@@ -601,29 +655,8 @@ footer .social a:hover {
 
   } */
 
-  main {
+  /* main {
     margin-top: var(--header-height);
-  }
-
-  /*home*/
-  /* #home .container {
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  #home .image {
-    order: 1;
-  }
-
-  #home .image img {
-    right: 0;
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
   } */
   
   /*about*/
